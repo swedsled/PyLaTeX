@@ -23,7 +23,7 @@ class Container(LatexObject, UserList):
 
     """
 
-    content_separator = '%\n'
+    content_separator = '\n'
 
     def __init__(self, *, data=None):
         r"""
