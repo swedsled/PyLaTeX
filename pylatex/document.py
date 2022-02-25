@@ -158,10 +158,10 @@ class Document(Environment):
         str
         """
 
-        head = self.documentclass.dumps() + '%\n'
-        head += self.dumps_packages() + '%\n'
-        head += dumps_list(self.variables) + '%\n'
-        head += dumps_list(self.preamble) + '%\n'
+        head = self.documentclass.dumps() + '\n'
+        head += self.dumps_packages() + '\n'
+        head += dumps_list(self.variables) + '\n'
+        head += dumps_list(self.preamble) + '\n'
 
         return head + '%\n' + super().dumps()
 
